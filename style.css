@@ -1,0 +1,41 @@
+
+body {
+    font-family: 'Changa', sans-serif;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 0 14rem;
+}
+.header {
+    display: flex;
+    background-color: dimgray;
+    align-items: center;
+    width: 100%;
+}
+.header___pic {
+    height: 20rem;
+    width: 20rem;
+    margin-right: 2rem;
+}
+.header__personal {
+    width: 20rem;
+    height: 20rem;
+    border-left: 2px solid black;
+    padding: 2rem;
+}
+.header__personal-surname {
+    font-size: 7rem;
+    font-weight: 400;
+}
+.header__personal-name {
+    font-size: 3rem;
+}
+.header__personal-role {
+}
+.about {
+}
+.skils {
+}
+.footer {
+}
