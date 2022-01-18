@@ -10,7 +10,8 @@ body {
 .hero {
     height: 100vh; 
     padding: 7rem 10rem 5rem; 
-    display: flex; 
+    display: flex;
+    position: relative; 
 }
 
 .header {
@@ -41,11 +42,9 @@ body {
     justify-content: center;
 }
 .header__avatar {
-    height: 20rem;
-    border-radius: 20%;
+    border-radius: 50%;
     border: .1rem solid orange;
     background-color: orange;
-    
 }
 
 .header__personal {
@@ -226,6 +225,54 @@ body {
 }
 .footer {
     width: 20rem;
+}
+.words {
+    display: inline-block;
+    font-size: 2rem;
+    color: orange;
+}
+.words {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transition: ease;
+    animation-duration: 3s;
+    animation-name: fall;
+    animation-iteration-count: infinite;
+}
+/* .words:nth-child(2) {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+}
+.words:nth-child(3) {
+    position: absolute;
+    top: 0%;
+    left: 60%;
+}
+.words:nth-child(4) {
+    position: absolute;
+    top: 0%;
+    left: 80%;
+}
+.words:last-child{
+    position: absolute;
+    top: 0%;
+    left: 90%;
+} */
+@keyframes fall {
+    0%{
+        top: 0%;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        top: 50%;
+    }
+    100%{
+        opacity: 0;
+        top: 100%;
+    }
 }
 @keyframes htmlcss {
     from {
