@@ -12,6 +12,8 @@ body {
     padding: 7rem 10rem 5rem; 
     display: flex;
     position: relative; 
+    overflow: hidden;
+    z-index: 10;
 }
 
 .header {
@@ -45,6 +47,7 @@ body {
     border-radius: 50%;
     border: .1rem solid orange;
     background-color: orange;
+    animation: lamp 1s linear infinite alternate;
 }
 
 .header__personal {
@@ -228,50 +231,60 @@ body {
 }
 .words {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 6rem;
     color: orange;
-}
-.words {
     position: absolute;
     top: 0;
-    left: 10%;
-    transition: ease;
-    animation-duration: 3s;
-    animation-name: fall;
-    animation-iteration-count: infinite;
+    left: 5%;
+    animation: fall 6s linear infinite;
+    animation-delay: 5s;
+    opacity: 0;
 }
-/* .words:nth-child(2) {
+.words:nth-child(2) {
     position: absolute;
     top: 0%;
-    left: 40%;
+    left: 30%;
+    font-size: 2rem;
+    animation-delay: 7s;
+    font-size: 3rem;
 }
 .words:nth-child(3) {
     position: absolute;
     top: 0%;
     left: 60%;
+    animation-delay: 4s;
+    z-index: 15;
+    font-size: 4rem;
 }
 .words:nth-child(4) {
     position: absolute;
+    font-size: 10rem;
     top: 0%;
     left: 80%;
+    animation-delay: 1s;
+    z-index: 5;
 }
 .words:last-child{
     position: absolute;
     top: 0%;
     left: 90%;
-} */
+    animation-delay: 2s;
+    font-size: 5rem;
+}
 @keyframes fall {
     0%{
-        top: 0%;
+        top: -10%;
         opacity: 0;
+        transform: rotate(0deg);
     }
-    50%{
+    /* 50%{
         opacity: 1;
         top: 50%;
-    }
+    } */
     100%{
-        opacity: 0;
-        top: 100%;
+        opacity: 1;
+        top: 110%;
+        transform: rotate(390deg);
     }
 }
 @keyframes htmlcss {
@@ -304,5 +317,13 @@ body {
     }
     to {
         width:50%
+    }
+}
+@keyframes lamp {
+    from {
+        box-shadow: 0 0 0 0 orange;
+    }
+    to {
+        box-shadow: 0 0 1rem 0 orange;
     }
 }
