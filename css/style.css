@@ -7,11 +7,12 @@ body {
     flex-direction: column;
 
 }
+
 .hero {
-    height: 100vh; 
-    padding: 7rem 10rem 5rem; 
+    height: 100vh;
+    padding: 7rem 10rem 5rem;
     display: flex;
-    position: relative; 
+    position: relative;
     overflow: hidden;
 }
 
@@ -25,6 +26,7 @@ body {
     z-index: 10;
 
 }
+
 .header__row {
     display: flex;
     justify-content: center;
@@ -44,6 +46,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .header__avatar {
     border-radius: 50%;
     border: .1rem solid orange;
@@ -68,13 +71,16 @@ body {
     -webkit-text-stroke: 1px black;
     color: orange;
 }
+
 .header__text {
     font-size: 7rem;
 }
+
 .header__personal-name {
     font-size: 3rem;
     letter-spacing: .1rem;
 }
+
 .header__symbol {
     color: orange;
 }
@@ -82,52 +88,63 @@ body {
 .header__personal-role {
     white-space: nowrap;
 }
+
 .header__icons {
     display: flex;
     width: 20rem;
     justify-content: center;
     align-items: center;
 }
+
 .header__icons-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .header__row-footer {
     width: 100%;
 }
+
 .header__contacts {
     display: flex;
     justify-content: space-around;
 }
+
 .header__contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .header__contact-name {
     font-size: 2rem;
 }
+
 .header__contact-name::after {
     content: ' :';
     color: orange;
     font-size: 1.7rem;
 }
+
 .header__contact-content {
     font-weight: 500;
     letter-spacing: .05rem;
     transition: .4s ease-in-out;
 
 }
+
 .header__contact:nth-child(3) .header__contact-content:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+
 .header__contact:nth-child(4) .header__contact-content:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+
 .header__link {
     text-decoration: none;
     color: black;
@@ -137,25 +154,31 @@ body {
     /* height: 100vh; */
     background-color: gray;
 }
+
 .about__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 4rem 10rem 4rem;
 }
+
 .about_title {
     margin-bottom: 1rem;
     font-size: 4rem;
 }
+
 .about__p {
     margin-bottom: 1rem;
 }
+
 .about__container .about__p:last-child {
     margin-bottom: 0;
 }
+
 .skills {
     background-color: black;
 }
+
 .skils__container {
     display: flex;
     flex-direction: column;
@@ -163,31 +186,38 @@ body {
     color: orange;
     padding: 4rem 10rem 4rem;
 }
+
 .skills__title {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
 }
+
 .skills__title-text {
     font-size: 4rem;
 }
+
 .skills__group {
     display: flex;
     flex-direction: column;
 }
+
 .skills__wrap {
     display: flex;
     justify-content: space-around;
 }
+
 .skills__item {
     margin-bottom: 1rem;
     width: 30%;
 }
-.skills__icon {
-}
+
+.skills__icon {}
+
 .skills__name {
     font-size: 2rem;
 }
+
 .skills__progress {
     background-color: rgb(53, 51, 51);
     height: 2rem;
@@ -197,39 +227,47 @@ body {
     align-items: center;
     border-radius: 1rem;
 }
+
 .skills__bar-unfill {
     height: 1rem;
     background: rgb(53, 51, 51);
     width: 100%;
     border-radius: 1rem;
 }
+
 .skills__bar-fill {
     height: 1rem;
-    background: linear-gradient(90deg, rgba(255,190,0,1) 0%, rgba(203,67,20,1) 84%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(255, 190, 0, 1) 0%, rgba(203, 67, 20, 1) 84%, rgba(255, 0, 0, 1) 100%);
     width: 0;
     border-radius: 1rem;
     transition: .8s ease;
     box-shadow: 0rem 0rem .5rem 0rem rgba(255, 137, 2, 0.47);
 }
+
 .html-anim {
     animation: htmlcss 4s ease-out 1s;
     width: 80%;
 }
+
 .js-anim {
     animation: js 4s ease-out 1s;
     width: 60%;
 }
+
 .rct-anim {
     animation: rct 4s ease-out 1;
     width: 50%;
 }
+
 .git-anim {
     animation: git 4s ease-out 1;
     width: 50%;
 }
+
 .footer {
     width: 20rem;
 }
+
 .words {
     display: flex;
     justify-content: space-around;
@@ -241,9 +279,11 @@ body {
     top: 0;
     left: 0;
 }
+
 .word {
     opacity: 0;
 }
+
 .word:nth-child(1) {
     position: absolute;
     top: 0%;
@@ -254,6 +294,7 @@ body {
     animation-delay: 3s;
     z-index: 5;
 }
+
 .word:nth-child(2) {
     position: absolute;
     top: 0%;
@@ -264,6 +305,7 @@ body {
     animation-delay: 2s;
     z-index: 5;
 }
+
 .word:nth-child(3) {
     position: absolute;
     top: 0%;
@@ -274,6 +316,7 @@ body {
     animation-delay: 5.5s;
     z-index: 5;
 }
+
 .word:nth-child(4) {
     position: absolute;
     top: 0%;
@@ -284,6 +327,7 @@ body {
     animation-delay: 0s;
     z-index: 5;
 }
+
 .word:nth-child(5) {
     position: absolute;
     top: 0%;
@@ -294,6 +338,7 @@ body {
     animation-delay: 1s;
     z-index: 5;
 }
+
 .word:nth-child(6) {
     position: absolute;
     top: 0%;
@@ -304,6 +349,7 @@ body {
     animation-delay: 4.5s;
     z-index: 5;
 }
+
 .word:nth-child(7) {
     position: absolute;
     top: 0%;
@@ -314,6 +360,7 @@ body {
     animation-delay: 1.2s;
     z-index: 5;
 }
+
 .word:nth-child(8) {
     position: absolute;
     top: 0%;
@@ -324,58 +371,71 @@ body {
     animation-delay: 3.5s;
     z-index: 5;
 }
+
 @keyframes fall {
-    0%{
+    0% {
         top: -10%;
         opacity: 0;
         transform: rotateX(0deg) rotateZ(0deg);
     }
-    50%{
+
+    50% {
         opacity: 1;
         top: 50%;
     }
-    100%{
+
+    100% {
         opacity: 0;
         top: 110%;
         transform: rotateX(390deg) rotateZ(360deg);
     }
 }
+
 @keyframes htmlcss {
     from {
-        width:0
+        width: 0
     }
+
     to {
-        width:80%
+        width: 80%
     }
 }
+
 @keyframes js {
     from {
-        width:0
+        width: 0
     }
+
     to {
-        width:60%
+        width: 60%
     }
 }
+
 @keyframes rct {
     from {
-        width:0
+        width: 0
     }
+
     to {
-        width:50%
+        width: 50%
     }
 }
+
 @keyframes git {
     from {
-        width:0
+        width: 0
     }
+
     to {
-        width:50%
+        width: 50%
     }
 }
+
 @keyframes lamp {
     from {
         box-shadow: 0 0 0 0 orange;
     }
+
     to {
         box-shadow: 0 0 1rem 0 orange;
     }
