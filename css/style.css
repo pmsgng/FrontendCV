@@ -9,7 +9,7 @@ body {
 }
 
 .hero {
-    height: 100vh;
+    max-height: 100vh;
     padding: 7rem 10rem 5rem;
     display: flex;
     position: relative;
@@ -169,6 +169,7 @@ body {
 
 .about__p {
     margin-bottom: 1rem;
+    text-indent: 1rem;
 }
 
 .about__container .about__p:last-child {
@@ -227,7 +228,9 @@ body {
     align-items: center;
     border-radius: 1rem;
 }
-
+.skills__content {
+    text-align: start;
+}
 .skills__bar-unfill {
     height: 1rem;
     background: rgb(53, 51, 51);
@@ -434,9 +437,11 @@ body {
 @keyframes lamp {
     from {
         box-shadow: 0 0 0 0 orange;
+        transform: scale(1);
     }
 
     to {
         box-shadow: 0 0 1rem 0 orange;
+        transform: scale(1.01);
     }
 }
