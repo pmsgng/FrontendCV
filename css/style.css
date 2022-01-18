@@ -13,21 +13,22 @@ body {
     display: flex;
     position: relative; 
     overflow: hidden;
-    z-index: 10;
 }
 
 .header {
     display: flex;
-    background-color: white;
+    background-color: transparent;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
+    z-index: 10;
+
 }
 .header__row {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: transparent;
     align-items: center;
     height: 20rem;
     width: 100%;
@@ -230,61 +231,113 @@ body {
     width: 20rem;
 }
 .words {
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
     font-size: 6rem;
     color: orange;
+    width: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
-    left: 5%;
-    animation: fall 6s linear infinite;
-    animation-delay: 5s;
+    left: 0;
+}
+.word {
     opacity: 0;
 }
-.words:nth-child(2) {
+.word:nth-child(1) {
     position: absolute;
     top: 0%;
-    left: 30%;
+    left: 10%;
     font-size: 2rem;
-    animation-delay: 7s;
     font-size: 3rem;
+    animation: fall 5s linear infinite;
+    animation-delay: 3s;
+    z-index: 5;
 }
-.words:nth-child(3) {
+.word:nth-child(2) {
     position: absolute;
     top: 0%;
-    left: 60%;
-    animation-delay: 4s;
-    z-index: 15;
-    font-size: 4rem;
+    left: 18%;
+    font-size: 2rem;
+    font-size: 3rem;
+    animation: fall 5s linear infinite;
+    animation-delay: 2s;
+    z-index: 5;
 }
-.words:nth-child(4) {
+.word:nth-child(3) {
     position: absolute;
-    font-size: 10rem;
     top: 0%;
-    left: 80%;
+    left: 28%;
+    font-size: 2rem;
+    font-size: 3rem;
+    animation: fall 5s linear infinite;
+    animation-delay: 5.5s;
+    z-index: 5;
+}
+.word:nth-child(4) {
+    position: absolute;
+    top: 0%;
+    left: 38%;
+    font-size: 2rem;
+    font-size: 3rem;
+    animation: fall 5s linear infinite;
+    animation-delay: 0s;
+    z-index: 5;
+}
+.word:nth-child(5) {
+    position: absolute;
+    top: 0%;
+    left: 48%;
+    font-size: 2rem;
+    font-size: 3rem;
+    animation: fall 5s linear infinite;
     animation-delay: 1s;
     z-index: 5;
 }
-.words:last-child{
+.word:nth-child(6) {
+    position: absolute;
+    top: 0%;
+    left: 58%;
+    font-size: 2rem;
+    font-size: 3rem;
+    animation: fall 5s linear infinite;
+    animation-delay: 4.5s;
+    z-index: 5;
+}
+.word:nth-child(7) {
+    position: absolute;
+    top: 0%;
+    left: 70%;
+    font-size: 2rem;
+    font-size: 3rem;
+    animation: fall 5s linear infinite;
+    animation-delay: 1.2s;
+    z-index: 5;
+}
+.word:nth-child(8) {
     position: absolute;
     top: 0%;
     left: 90%;
-    animation-delay: 2s;
-    font-size: 5rem;
+    font-size: 2rem;
+    font-size: 3rem;
+    animation: fall 5s linear infinite;
+    animation-delay: 3.5s;
+    z-index: 5;
 }
 @keyframes fall {
     0%{
         top: -10%;
         opacity: 0;
-        transform: rotate(0deg);
+        transform: rotateX(0deg) rotateZ(0deg);
     }
-    /* 50%{
+    50%{
         opacity: 1;
         top: 50%;
-    } */
+    }
     100%{
-        opacity: 1;
+        opacity: 0;
         top: 110%;
-        transform: rotate(390deg);
+        transform: rotateX(390deg) rotateZ(360deg);
     }
 }
 @keyframes htmlcss {
