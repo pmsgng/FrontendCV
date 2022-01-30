@@ -227,6 +227,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 1rem;
+    margin-bottom: .5rem;
 }
 .skills__content {
     text-align: start;
@@ -379,18 +380,19 @@ body {
     0% {
         top: -10%;
         opacity: 0;
-        transform: rotateX(0deg) rotateZ(0deg);
+        transform: rotateX(-180deg) rotateZ(-180deg);
     }
 
     50% {
         opacity: 1;
         top: 50%;
+        transform: rotateX(-0deg) rotateZ(0deg);
     }
 
     100% {
         opacity: 0;
         top: 110%;
-        transform: rotateX(390deg) rotateZ(360deg);
+        transform: rotateX(180deg) rotateZ(190deg);
     }
 }
 
