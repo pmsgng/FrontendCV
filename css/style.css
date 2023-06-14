@@ -39,21 +39,19 @@ body {
 
 .header___pic {
     display: flex;
-    height: 20rem;
-    width: 20rem;
+    min-height: 20rem;
+    min-width: 20rem;
     margin-right: 2rem;
     overflow: hidden;
     align-items: center;
     justify-content: center;
-}
-
-.header__avatar {
-    border-radius: 50%;
+    background-image: url(/img/avatar.jpg);
+    background-size: cover;
+    border-radius: 4rem;
     border: .1rem solid orange;
     background-color: orange;
     animation: lamp 1s linear infinite alternate;
 }
-
 .header__personal {
     display: flex;
     flex-direction: column;
